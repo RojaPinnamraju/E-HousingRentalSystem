@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<title>E-Housing Rental System</title>
+<head>
+	<link rel="stylesheet" href="register1.css">
+</head>
+<body style="background-color:#9775FA;">
+   <div style="width:100%">   
+            <div class="imgEhrs"><img src="./ehrslogo.jpg" height="200" width="350">
+            </div>
+            <div class="imgNsrit"><img src="./nsrit_logo.png" height="130" width="1100">
+                <h2 style="float:right;">
+<script>
+date = new Date().toLocaleDateString();
+document.write(date);
+</script></h2>
+                <center>  <h1 style="color:white">E-Housing Rental System</h1></center> 
+ 
+    </div>
+        </div>
+        <div style="background-color:#F8C4C4; height:640px; width:23%; float:left;">
+            <div>
+                
+                <ul>
+                     <br><br>
+                    <h1><li><a href="./index.html">Home</a></li></h1><br><br><br><br><br><br><br>
+                    <h1><li><a href="./login.html">Login</a></li></h1><br><br><br><br><br><br><br>
+                    <h1><li><a href="./about.html">About</a></li></h1>
+                </ul>
+                            </div>  </div>
+          <div>
+        <p>&nbsp;&nbsp;</p> 
+
+    </div>
+
+<center><h1 style="color:red;"><u>REGISTRATION</u></h1></center><br>
+                    
+                
+                
+<center><form name="myform"  action="ehrsRegister">
+  <div class="container1">
+  
+    
+    <label for="FirstName"><b>FirstName</b></label>
+    <input type="text" name="FirstName" id="fname">       
+    <label for="Middle Name"><b>MiddleName</b></label>
+    <input type="text" name="MiddleName" id="mname"><br>
+    <label for="Last Name"><b>LastName</b></label>
+    <input type="text" name="LastName" id="lname" >
+    <label for="AadharNo"><b>AadharNo</b></label>
+    <input type="number" name="AadharNo" id="adaarnum"><br> 
+    <label for="Date_Of_Reg"><b>Date_Of_Reg</b></label>
+    <input class="date1" type="date" name="Date_Of_Reg" id="dor">
+    <label for="DOB"><b>DOB</b></label>
+    <input class="date2" type="date" name="D_O_B"><br>
+    <label for="MobileNo_1"><b>MobileNo</b></label>
+    <input type="number" name="MobileNo" id="mobile">
+    <label for="Email"><b>Email</b></label>
+    <input type="text" name="Email" id="email"><br> 
+    <label for="AddrLine1"><b>Address_Line1</b></label>
+    <input type="text" name="Address_Line1" id="addr_1">
+    <label for="AddrLine2"><b>Address_Line2</b></label>
+    <input type="text" name="Address_Line2" id="addr_2"><br>
+    <label for="State"><b>State</b></label>
+    <input type="text" name="State" id="state" >
+    <label for="District"><b>District</b></label>
+    <input type="text" name="District" id="district"><br>
+    <label for="Zipcode"><b>Zipcode</b></label>
+    <input type="number" name="Zipcode" id="zipcode">
+    <label for="UserName"><b>UserName</b></label>
+    <input type="text" name="UserName" id="username" ><br>
+    <label for="Password"><b>Password</b></label>
+    <input type="password" name="Password">
+    <label for="Confirm_Pass"><b>Confirm_Pass</b></label>
+    <input type="password" name="Confirm_Pass" ><br>
+    
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+     
+    <div class="btns"><button type="submit">Submit</button></div>
+  </div>
+</form>
+<!DOCTYPE html>
+<html>
+<title>E-Housing Rental System</title>
+<head>
+	<link rel="stylesheet" href="register1.css">
+</head>
+<body style="background-color:#9775FA;">
+   <div style="width:100%">   
+            <div class="imgEhrs"><img src="./ehrslogo.jpg" height="200" width="350">
+            </div>
+            <div class="imgNsrit"><img src="./nsrit_logo.png" height="130" width="1100">
+                <h2 style="float:right;">
+<script>
+date = new Date().toLocaleDateString();
+document.write(date);
+</script></h2>
+                <center>  <h1 style="color:white">E-Housing Rental System</h1></center> 
+ 
+    </div>
+        </div>
+        <div style="background-color:#F8C4C4; height:640px; width:23%; float:left;">
+            <div>
+                
+                <ul>
+                     <br><br>
+                    <h1><li><a href="./index.html">Home</a></li></h1><br><br><br><br><br><br><br>
+                    <h1><li><a href="./login.html">Login</a></li></h1><br><br><br><br><br><br><br>
+                    <h1><li><a href="./about.html">About</a></li></h1>
+                </ul>
+                            </div>  </div>
+          <div>
+        <p>&nbsp;&nbsp;</p> 
+
+    </div>
+
+
+
+<center><u><h1 style="color:#FFF;">REGISTRATION</h1></u></center><br>
+                    
+                
+                
+<center><form name="myform" onsubmit= "return validpassword()" action="index.html">
+  <div class="container1">
+  
+    
+
+    <label for="FirstName"><b>FirstName</b></label>
+    <input type="text" name="FirstName" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters" > 
+    <label for="MiddleName"><b>MiddleName</b></label>
+    <input type="text" name="MiddleName" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters" > <br>
+    <label for="LastName"><b>LastName</b></label>
+    <input type="text" name="LastName" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters" >  
+    <label for="AadharNo"><b>AadharNo</b></label>
+    <input type="number" name="AadharNo" id="adaarnum"><br>
+    <label for="Date_Of_Reg"><b>Date_Of_Reg</b></label>
+    <input class="date1" type="date" name="Date_Of_Reg" id="dor">
+    <label for="DOB"><b>DOB</b></label>
+    <input class="date2" type="date" name="D_O_B" id="dob" required><br>
+    <label for="MobileNo_1"><b>MobileNo</b></label>
+    <input type="number" name="MobileNo" id="mobile">
+    <label for="Email"><b>Email</b></label>
+    <input type="text" name="Email" id="email"><br>
+    <label for="AddrLine1"><b>Address_Line1</b></label>
+    <input type="text" name="Address_Line1" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters">
+    <label for="AddrLine2"><b>Address_Line2</b></label>
+    <input type="text" name="Address_Line2" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters"><br>
+    <label for="State"><b>State</b></label>
+    <input type="text" name="State" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters">
+    <label for="District"><b>District</b></label>
+    <input type="text" name="District" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters"><br>
+    <label for="Zipcode"><b>Zipcode</b></label>
+    <input type="number" name="Zipcode">
+    <label for="UserName"><b>UserName</b></label>
+    <input type="text" name="UserName" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters"><br>
+    <label for="Password"><b>Password</b></label>
+    <input type="password" name="password">
+    <label for="Confirm_Pass"><b>Confirm_Pass</b></label>
+    <input type="password" name="confirm_Pass"><br>
+    
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+     
+    <div class="btns"><button type="submit">Submit</button></div>
+  </div>
+</form>
+<script>
+ function validpassword()
+{
+	
+        var fn=document.myform.FirstName.value;
+        var mn=document.myform.MiddleName.value;
+        var ln=document.myform.LastName.value;
+        var adar=document.myform.AadharNo.value;
+        var curdate1=new Date();
+        var dor=new Date(document.myform.Date_Of_Reg.value);
+        var curdate=new Date();
+        var dob2=new Date(document.myform.D_O_B.value);
+        var mob=document.myform.MobileNo.value;
+
+        
+        var mail=document.myform.email.value;
+        var atposition=mail.indexOf("@");
+        var dotposition=mail.lastIndexOf(".");
+        var addr1=document.myform.Address_Line1.value;
+        var addr2=document.myform.Address_Line2.value;
+        var st=document.myform.State.value;
+        var dist=document.myform.District.value;
+        var zip=document.myform.Zipcode.value;
+        var uid=document.myform.UserName.value;
+        var pass=document.myform.password.value;
+	var cpass=document.myform.confirm_Pass.value;
+        if(fn==null || fn==""){
+            alert("Please enter FIRST NAME");
+            return false;
+        }
+        if(mn==null || mn==""){
+            alert("Please enter MIDDLE NAME");
+            return false;
+        }
+        if(ln==null || ln==""){
+            alert("Please enter LAST NAME");
+            return false;
+        }
+        if(adar.length!=12)
+        {
+            alert("Enter 12 digit valid Aadhaar Number");
+            return false;
+        }
+        
+        
+        if(dor>curdate1)
+	{	
+		alert("please provide valid date of birth");
+                return false;
+	}
+       
+       if(dob2>curdate)
+	{	
+		alert("please provide valid date of birth");
+                return false;
+	}
+        if(mob.length!=10)
+        {
+            alert("Enter 10 digit valid Mobile Number");
+            return false;
+        }
+        if(atposition < 1 || dotposition < atposition+2 || atposition+2 >= mail.length)
+        {
+            alert("please enter valid email");
+            return false;         
+        } 
+        
+        if(addr1==null || addr1==""){
+            alert("Please enter valid ADDRESS LINE 1");
+            return false;
+        }
+        if(addr2==null || addr2==""){
+            alert("Please enter vallid ADDRESS LINE 2");
+            return false;
+        }
+        if(st==null || st==""){
+            alert("Please enter valid STATE");
+            return false;
+        }
+        if(dist==null || dist==""){
+            alert("Please enter Valid DISTRICT");
+            return false;
+        }
+        if(zip.length!=6)
+        {
+            alert("Enter 6 digit valid PINCODE");
+            return false;
+        }
+        if(uid==null || uid==""){
+            alert("Please enter USER_ID");
+            return false;
+        }
+	if(pass.length<6)
+	{	
+		alert("PASSWORD should contain atleast 6 char");
+                return false;
+	}
+        if(pass==cpass)
+        {
+            return true;
+        }
+        else
+        {
+            alert(" PASSWORD DOESNOT MATCH");
+            return false;
+        }
+
+
+}
+</script>
+</center>
+  
+</html>
+</center>
+
+    
+</body>
+  
+</html>

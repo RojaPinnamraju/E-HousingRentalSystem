@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>listing page </title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Lexend', sans-serif;
+            }
+            container{
+                width: 100%;
+                height: 100vh;
+            }
+            .header{
+                width: 100%;
+                height: 100px;
+                margin: 5px 10px 0px 4px;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                 box-shadow: 1px 3px 5px #aaaaaa;
+               
+              
+            }
+            .logo{
+                font-size: 70px;
+                cursor: pointer; 
+                margin: 20px 0px 20px 60px;
+            }
+            .header nav ul
+            {
+                display:flex;
+                font-weight: bold;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                 margin:  20px 0px 20px 940px;
+                 
+                 
+            }
+            .header nav ul li{
+                cursor: pointer;
+                font-size: 20px;
+                padding: 5px 30px;
+               
+                
+            }
+            .header nav ul li a{
+                 text-decoration: none;
+                  padding: 4px 15px;
+                  border-radius: 20px;
+                  background-color: cyan;
+                 
+            }
+            .btn{
+                margin-right: 100px;
+                padding: 10px 30px;
+                  background-color: cyan;
+                  border-radius: 50px;
+                  font-size: 20px;
+                  font-weight: bold;
+                  border: transparent;
+            }
+            ul li a:hover {
+              border: 1px solid black;
+             color: black;
+            
+             text-align: center;
+             text-decoration: none;
+             transition: 0.5s;
+             border:2px solid green;
+                  
+            }
+             .btn:hover {
+              border: 1px solid black;
+             color: black;
+             }
+           
+
+        </style>
+    </head>
+    <body><div class="container"></div>
+        <div class="header">
+            <h1 class="logo">EHRS</h1>
+            <nav>
+                <ul>
+                   <li class="active"><a href="index.html">Home</a></li>
+                 <li><a href="about,html.html">About</a></li>
+                 <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Register</button>
+        </div>
+    </body>
+</html>

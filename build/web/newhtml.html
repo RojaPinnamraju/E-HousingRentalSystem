@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>E-Housing Rental System</title>
+
+	<link rel="stylesheet" href="register1.css">
+</head>
+<body style="background-color:#9775FA;">
+   <div style="width:100%">   
+            <div class="imgEhrs"><img src="./ehrslogo.jpg" height="200" width="350">
+            </div>
+            <div class="imgNsrit"><img src="./nsrit_logo.png" height="130" width="1100">
+                <h2 style="float:right;">
+<script>
+date = new Date().toLocaleDateString();
+document.write(date);
+</script></h2>
+                <center>  <h1 style="color:white">E-Housing Rental System</h1></center> 
+ 
+    </div>
+        </div>
+        <div style="background-color:#F8C4C4; height:640px; width:23%; float:left;">
+            <div>
+                
+                <ul>
+                     <br><br>
+                    <h1><li><a href="./index.html">Home</a></li></h1><br><br><br><br><br><br><br>
+                    <h1><li><a href="./login.html">Login</a></li></h1><br><br><br><br><br><br><br>
+                    <h1><li><a href="./about.html">About</a></li></h1>
+                </ul>
+                </pre></ul>
+            </div>  </div>
+          <div>
+        <p>&nbsp;&nbsp;</p> 
+
+    </div>
+
+<center><u><h1 style="color:red;">REGISTRATION</h1></u></center><br>
+                    
+                
+                
+<center><form name="myform" onsubmit= "return validpassword()" action="index.html">
+  <div class="container1">
+  
+    
+
+    <label for="FirstName"><b>FirstName</b></label>
+    <input type="text" name="FirstName" id="fname" pattern="[a-zA-Z ]{3,20}" title="name must contain alphabets only and minimum 3 characters" >    
+       <label for="DOB"><b>DOB</b></label>
+    <input class="date2" type="date" name="D_O_B" id="dob"><br>
+    <label for="Email"><b>Email</b></label>
+    <input type="text" name="Email" id="email"><br> 
+    <label for="Password"><b>Password</b></label>
+    <input type="password" name="password">
+    <label for="Confirm_Pass"><b>Confirm_Pass</b></label>
+    <input type="password" name="confirm_Pass" ><br>
+    
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+     
+    <div class="btns"><button type="submit">Submit</button></div>
+  </div>
+</form>
+<script>
+ function validpassword()
+{
+	
+        var fn=document.myform.fname.value;
+        
+        var curdate=new Date();
+        var dob2=new Date(document.myform.D_O_B.value);
+        var mail=document.myform.email.value;
+        var atposition=mail.indexOf("@");
+        var dotposition=mail.lastIndexOf(".");
+        var pass=document.myform.password.value;
+	var cpass=document.myform.confirm_Pass.value;
+        if(fn==null || fn==""){
+            alert("Please enter name");
+            return false;
+        }
+       if(dob2>curdate)
+	{	
+		alert("please provide valid date of birth");
+                return false;
+	}
+        if(atposition < 1 || dotposition < atposition+2 || atposition+2 >= mail.length)
+        {
+            alert("please enter valid email");
+            return false;         
+        } 
+	if(pass.length<6)
+	{	
+		alert("shouldd contain atleast 6 char");
+                return false;
+	}
+        if(pass==cpass)
+        {
+            return true;
+        }
+        else
+        {
+            alert("pass and cpass should be same");
+            return false;
+        }
+
+
+}
+</script>
+</center>
+
+    
+</body>
+  
+</html>
